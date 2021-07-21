@@ -1,0 +1,2331 @@
+CODE-1
+a=float(input('what is the  test number: '))
+b=int(input('what is the value of test: '))
+if a==1 and   20 < b <30:
+    print('NORMAL')
+elif a==1 and b<20 or b > 30:
+    print(' NOT NORMAL')
+elif a==2 and 35.5 < b <40:
+    print('NORMAL')
+elif a==2 and b<35.5 or b>40:
+    print('NOT NORMAL')
+elif a==3 and 12 < b <15:
+    print('NORMAL')
+elif a==3 and b<12 or b>15:
+    print('NOT NORMAL')
+elif a==4 and 120 < b <150:
+    print('NORMAL')
+elif a==4 and b<120 or b>150:
+    print('NOT NORMAL')
+
+CODE-2
+a=int(input('what is the book taken date: '))
+b=int(input('what is the book taken month: '))
+c=int(input('what is the book taken year: '))
+p=int(input('what is the book given date: '))
+q=int(input('what is the book given month: '))
+r=int(input('what is the book given year: '))
+if a == p and b == q and c == r:
+  print('NO FINE')
+elif b==q and c==r:
+    m=(15*(p-a))
+    l=str(m)
+    u='fine='
+    print(u + l)
+elif r == c and q != b:
+      j=(500*(q-b))
+      f='fine='
+      d=str(j)
+      print(f + d)
+elif r != c:
+              print('fine=10000')
+CODE-3 TO WRITE A QUADRATIC EQUATION
+
+a=float(input('what is the value of a: '))
+b=float(input('what is the value of b: '))
+c=float(input('what is the value of c: '))
+x=(-b+(b**2-4*a*c)**1/2)/2*a
+F=a*x**2+b*x+c
+if F==0 :
+  print(x)
+
+CODE-4 TO FORM A TRIANGLE
+
+X1=float(input('what isthe value of X1: '))
+X2=float(input('what isthe value of X2: '))
+X3=float(input('what isthe value of X3: '))
+Y1=float(input('what isthe value of Y1: '))
+Y2=float(input('what isthe value of Y2: '))
+Y3=float(input('what isthe value of Y3: '))
+import math
+A=math.sqrt((X1-X2)**2+(Y2-Y1)**2)
+B=math.sqrt((X1-X3)**2+(Y1-Y3)**2)
+C=math.sqrt((X1-X3)**2+(Y1-Y3)**2)
+if(A-B<C or B-A<C) and (C-A<B or A-C<B) and (C-A<B or A-C<B) and (X1*(Y2-Y3)+X2*(Y3-Y1)+X3*(Y1-Y2)) != 0:
+  print("can form a triangle")
+elif (X1*(Y2-Y3)+X2*(Y3-Y1)+X3*(Y1-Y2)) == 0:
+    print("CAN'T FORM A TRIANGLE AND LIE ON A STRAIGHT LINE")
+
+CODE-5 TO FIND LENGTH
+p=int(input('what is the mobile number excluding code: '))
+p = [int(p) for p in str(p)]
+m=len(p)
+print(m)
+
+*a='aditya'
+>>> c=list(a)
+>>> print(c)
+['a', 'd', 'i', 't', 'y', 'a']
+>>> a='aditya'
+ CODE-6 
+>>> a='aditya'
+>>> c=list(a)
+>>> print(c.pop(3))
+t
+>>> print(c)
+['a', 'd', 'i', 'y', 'a']
+>>> 
+
+
+*>>> a='adityakumar'
+>>> print(l.count('a'))
+0
+>>> a='adityakumar'
+>>> print(a.count('a'))
+3
+
+*>>> a=[1,2,4]
+>>> p.append(8)
+>>> a=[1,2,4]
+>>> a.append(8)
+>>> print(a)
+[1, 2, 4, 8]
+>>> 
+
+*>>> a='aditya'
+>>> print(a.lstrip('a'))
+ditya
+>>> 
+
+*>>> a='aditya'
+>>> print(a.lstrip('a'))
+ditya
+>>> s='pythonprogramme'
+>>> print(s.index('prog',0,17))
+6
+>>> 
+
+
+*>>> a='aditya'
+>>> print(a[0:3])
+adi
+>>> 
+
+*a='aditya'
+p=list(a)
+l=len(p)
+if l%2==0:
+ print(a[4:l])
+
+*a='aditya'
+p=list(a)
+l=len(p)
+if l%2==0:
+ print(a[0:l-3])
+
+#a='aditya'
+p=list(a)
+l=len(p)
+if l%2==0:
+ print(a[0:l-3])
+
+
+#a='aditya'
+p=list(a)
+l=len(p)
+if l%2==0:
+ print(a[0:1]+a[l-1:l])
+
+
+#REVERSE FUNCTION IN PYTHON
+txt = "Hello World"[::-1]
+print(txt)
+
+#7.	Return the middle char from a given a string(odd char)
+a='adityak'
+p=list(a)
+j=len(p)
+h=(j+1)//(2)
+print(a[h:h+1])
+
+#a='VIT vellore and VIT chennai'
+print(a.count('VIT'))
+
+
+# list(range(0,6))
+[0, 1, 2, 3, 4, 5]
+
+# MULTIPLYING TWO LIST
+a=[1,2]
+b=[3,4]
+c=[a[i]*b[i] for i in range(len(a))]
+print(c)
+
+#a=[1,2]
+c=[a[i]*a[i] for i in range(len(a))]
+print(c)
+
+#sorting letter in list
+a = ("b", "g", "a", "d", "f", "c", "h", "e")
+x = sorted(a)
+print(x)
+
+#reverse
+a = ("h", "b", "a", "c", "f", "d", "e", "g")
+x = sorted(a, reverse=True)
+print(x)
+
+#sorting number in list
+a=[3,1,2,8,7]
+x=sorted(a)
+print(x)
+[1, 2, 3, 7, 8]
+
+
+#a=[3,1,2,8,7]
+x=sorted(a)
+o=len(x)
+l='MIN'+str(x[0:1])
+p='MAX'+str(x[o-1:o])
+m=(p \n l )
+print(m)
+
+#x='"11","22",'
+y="'1','2'"
+t=x+y
+print(list(t))
+['"', '1', '1', '"', ',', '"', '2', '2', '"', ',', "'", '1', "'", ',', "'", '2', "'"]
+>>> 
+
+#x='"11","22",'
+y="'1','2'"
+t=x+y
+p=([t])
+print(p)
+
+['"11","22",\'1\',\'2\'']
+>>> 
+  
+
+#Input : Any integer with even number of digits
+
+Output : The difference between the sum of the digits that occur in alternate positions 
+(starting from the first position) and the sum of the digits that occur in the alternate
+ positions (starting from the rightmost position)
+
+x=str(int(input('what is the number: ')))
+f=list(x)
+p=len(x)
+a=int(x[0:1])+int(x[2:3])
+b=int(x[1:2])+int(x[3:4])
+print(b-a)
+
+
+# FINDING PRIME NUMBER
+a=str(input('what is the number: '))
+lower = 1
+upper = int(a)
+
+print("Prime numbers between", lower, "and", upper, "are:")
+
+for num in range(lower, upper + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
+
+#pop function
+>>> p=['a','b','0','c']
+>>> p.pop(2)
+'0'
+>>> print(p)
+['a', 'b', 'c']
+>>> 
+
+#w=int(input('what is the number: '))
+p=list(range(0,w))
+g=len(p)
+q=int(input('upto what number what should be sum: '))
+k=sum(p[0:q+1])
+
+
+for u in range(0,6):
+    j='*'*u
+    print(j)
+
+
+*
+**
+***
+****
+*****
+>>> 
+
+
+
+print(k)
+
+#a=[1,2]
+b=[6,8]
+d=0.0
+for i in range(len(a)):
+    d=a[i]*b[i]
+    print(d)
+
+6
+16
+
+
+#a=[1,4,6,7]
+c=str(a)
+k=len(a)
+if a[0:1]==a[k-1:k]:
+    print('true')
+else:
+        print('false')
+word=word.split(' ')
+
+
+
+
+a=float(input('what is the number: '))
+b=float(input('what is the number: '))
+if a > b:
+    print('A is greater')
+elif b > a:
+        print('B is greater')
+elif a==b:
+            print('both are equal')
+
+
+
+a=int(input('what is the number: '))
+b=list(range(0,a))
+v=sum(b)
+print(v)
+
+
+for h in range(0,9):
+    j=(h)*h
+    print(j)
+0
+1
+4
+9
+16
+25
+36
+49
+64
+
+
+
+
+for h in range(1,4):
+    for l in range(1,4):
+        j=l*h
+        print(j)
+
+
+
+
+
+1 
+
+2 2 
+
+3 3 3 
+
+4 4 4 4 
+
+5 5 5 5 5 
+
+6 6 6 6 6 6 
+
+7 7 7 7 7 7 7 
+
+8 8 8 8 8 8 8 8 
+
+9 9 9 9 9 9 9 9 9 
+
+>>> 
+
+for num in range(10):
+    for i in range(num):
+        print(num, end=" ")
+    print("\n")
+# table from 1 to 10
+
+for i in range(1,11):
+    for p in range(1,11):
+        k=(p)*i
+        print(k, end=" ")
+    print("\n")
+
+
+4 8 12 16 20 24 28 32 36 40 
+
+5 10 15 20 25 30 35 40 45 50 
+
+6 12 18 24 30 36 42 48 54 60 
+
+7 14 21 28 35 42 49 56 63 70 
+
+8 16 24 32 40 48 56 64 72 80 
+
+9 18 27 36 45 54 63 72 81 90 
+
+10 20 30 40 50 60 70 80 90 100 
+
+
+#for u in range(6,0,-1):
+    t='*'*u
+    print(t)
+******
+*****
+****
+***
+**
+*
+
+
+for i in range(4,30):
+    if i%2==0:
+        print(i)
+
+
+
+def multiplylist(mylist) :
+    result=1
+    for x in mylist:
+        result*=result*x
+    return result
+list1=[1,2,3]
+list2=[3,2,4]
+print(multiplylist(list1))
+print(multiplylist(list2))
+
+p=int(input('what is the number: '))
+for p in range(1,p):
+    u=(str(p)+':' +str(p*p))
+    print(u, end=" ")
+    print("\n")
+
+
+
+
+#multiplying list in python
+def multiply(numbers):
+    total=1
+    for x in numbers:
+        total*=x
+    return total
+print(multiply((1,4,6)))
+
+
+
+a=(input('what is the number: '))
+l=len(list(a))
+p=a.count('0')
+if l!=5 :
+    print("invalid input")
+elif l==5 and p!=0:
+    print(a)
+
+
+
+a=(input('type: '))
+p=a.replace("a","t")
+print(p)
+
+# list to string
+
+l=[5,7,9]
+a=' '.join(map(str,l))
+print(a)
+
+
+
+r=('a','b')
+f=''.join(r)
+print(f)
+
+a=(1,5,'Abc',9)
+print(a[2])
+\
+
+
+y=(1,7,5,4,9)
+h=y[:3]+('a','b')
+print(h)
+
+
+
+u=input('enter the numbers: ')
+c=tuple(u)
+n=len(c)
+e=(c[2]+c[n-2])
+print('\n'.join(map(str, e))) 
+
+
+g={1,2,3}
+f=g.remove(2)
+print(g)
+
+
+g={4,5,6,2,1}
+e=g.discard(2)
+print(g)
+
+
+
+g={4,5,6,2,1}
+e=g.add(2)
+print(g)
+
+
+#printing numbers in line in python
+print('\n'.join(map(str, e))) 
+
+
+g=float(input())
+h=float(input())
+f=float(input())
+
+l=g+(h/100)*g+(f/100)*g
+r=g+(h/100)*g+(f/100)*g+1
+d=int(l)
+q=int(r)
+if int(l) <= (d+1//2):
+    print(d)
+elif int(r) > (r+1//2):
+    print(r+1)
+
+
+Objective
+In this challenge, we're going to use loops to help us do some simple math. Check out the Tutorial tab to learn more.
+
+Task
+Given an integer, , print its first  multiples. Each multiple  (where ) should be printed on a new line in the form: n x i = result.
+
+Input Format
+
+A single integer, .
+
+Constraints
+
+Output Format
+
+Print  lines of output; each line  (where ) contains the  of  in the form:
+n x i = result.
+
+Sample Input
+
+2
+Sample Output
+
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+
+
+
+
+p=input()
+for i in range(0,10):
+    print(str(p)+'')
+    import m
+    
+
+
+a={50,300,100,9.9,6}
+print(a)
+
+
+{100, 6, 300, 50, 9.9}
+>>> 
+
+
+a={"aditya":1,"kumar":2}
+print(a)
+print(a["aditya"])
+{'aditya': 1, 'kumar': 2}
+1
+
+
+a={1,2,3,4,1,2,3,4}
+p=a.remove(2)
+print(a)
+
+
+a={1,2,7,4,3}
+t=a.discard(2)
+print(a)
+
+
+
+a={1,2}
+b={3,4}
+p=a.update(b)
+print(a)
+
+
+
+a=input()
+b=input()
+c=input()
+d=len(b)
+for i in range(0,d):
+    e=b[i]
+    print(e)
+
+2
+hacker
+rank
+h
+a
+c
+k
+e
+r
+>>> 
+
+
+
+a=input()
+b=input()
+c=input()
+d=len(b)
+q=len(c)
+for i in range(0,d,2):
+    e=b[i]
+    print(e, end="")
+print("\n")
+for p in range(1,d+1,2):
+    f=b[p]
+    print(f, end="")
+print("\n")
+for g in range(0,q,2):
+    h=c[g]
+    print(h, end="")
+print("\n")
+for j in range(1,q+1,2):
+    k=c[j]
+    print(k, end="")
+print("\n")
+
+
+
+2
+hacker
+rank
+hce
+
+akr
+
+rn
+
+ak
+
+# for joining size
+
+b=input()
+d=len(b)
+q=[b[i] for i in range(0,d,2)]
+print(q)
+
+
+
+a=(1,2,35323,4,3,9,25,56,32)
+print(max(a))
+print(min(a))
+
+
+(list(a))
+
+a=('a','b')
+b=''.join(a)
+print(b)
+t=(1,'a','f',6,7)
+print(t[:4]+(100,456))
+
+
+
+
+a={10,20,12,23,14}
+print(a)
+{10, 12, 14, 20, 23}
+
+
+b=[1,5,[1,2],2,8,"1bded"]
+print(b)
+
+[1, 5, [1, 2], 2, 8, '1bded']
+>>> 
+
+
+a=('a','b')
+b={}
+c=b.fromkeys(a)
+print(c)
+
+
+
+{'a': None, 'b': None}
+>>> 
+>>> 
+{1: 'a', 9: 'b'}
+
+
+a=('a','b')
+b={}
+c=b.fromkeys(a,100)
+print(c)
+
+
+
+a=('a','b')
+b={}
+c=b.fromkeys(a,100)
+print(c)
+
+
+
+{'a': 100, 'b': 100}
+>>> 
+
+
+
+
+
+a={1,80,40,30,40,90,100}
+b=a.remove(90)
+print(a)
+{1, 100, 40, 80, 30}
+>>> 
+
+
+a={1,80,40,30,40,90,100}
+b=a.add(70)
+print(a)
+{1, 100, 70, 40, 80, 90, 30}
+
+
+a={1,80,40,30,40,90,100}
+b={4567,986}
+c=a.update(b)
+print(a)
+{1, 986, 100, 40, 80, 4567, 90, 30}
+
+
+
+
+
+a=input()
+b=[]
+for i in range(0,len(a),2):
+    c=b.append(a[i])
+    print(''.join(b))
+    
+    
+1.py ===
+dgdjkkgfhcg
+d
+dd
+ddk
+ddkg
+ddkgh
+
+
+
+
+
+
+def cal(x,y):
+    a=x+y
+    b=x-y
+    c=x*y
+    return a,b,c
+z=cal(10,5)
+print(z)
+    
+    
+    a=('a','b')
+b=''.join(a)
+print(b)
+
+
+
+
+a=['bed','gjreen','dlue','ershj']
+b=a.sort()
+print(a)
+
+
+
+
+a=[34,65,35,90,7]
+b=list(filter(lambda n : n%5==0, a))
+print(b)
+
+
+[65, 35, 90]
+
+
+
+a=[34,65,35,90,7,6,45,30,54,8]
+b=list(filter(lambda a : a%3==0, a))
+print(b)
+[90, 6, 45, 30, 54]
+>>> 
+
+
+
+
+a=(1,5,6)
+del a
+a=(5,7.7)
+print(a)
+(5, 7.7)
+>>> 
+
+
+
+
+a=(1,5.515,'anu',103,6)
+b=a[2]
+print(b)
+
+
+anu
+
+
+
+
+a=(1,3)
+b=('a','b')
+print(a+b)
+
+
+
+(1, 3, 'a', 'b')
+
+
+
+
+ print(str(b)+'='+str(input()))
+    c=input('enter: ')
+    if str(c)==b:
+        print('paid')
+    else:
+            print('not paid')
+    
+
+
+a=input()
+for b in range(int(a)):
+    b=str(input())
+    print(b)
+
+
+
+5
+k
+k
+g
+g
+g
+g
+g
+g
+g
+g
+
+
+
+
+
+
+# Python program showing
+# how to take multiple input
+# using List comprehension
+ 
+# taking two input at a time
+x, y = [int(x) for x in input("Enter two value: ").split()]
+print("First Number is: ", x)
+print("Second Number is: ", y)
+print()
+ 
+# taking three input at a time
+x, y, z = [int(x) for x in input("Enter three value: ").split()]
+print("First Number is: ", x)
+print("Second Number is: ", y)
+print("Third Number is: ", z)
+print()
+ 
+# taking two inputs at a time
+x, y = [int(x) for x in input("Enter two value: ").split()]
+print("First number is {} and second number is {}".format(x, y))
+print()
+ 
+# taking multiple inputs at a time 
+x = [int(x) for x in input("Enter multiple value: ").split()]
+print("Number of list is: ", x) 
+
+
+
+
+
+Note : The above examples take input separated by spaces. In case we wish to take input separated by comma (, ), we can use following: 
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+# taking multiple inputs at a time separated by comma
+x = [int(x) for x in input("Enter multiple value: ").split(",")]
+print("Number of list is: ", x) 
+
+
+
+
+a=input()
+for b in range(int(a)):
+    e='d'+str(b)
+    f=str(input())
+    g=e=f
+    print(g)
+    
+
+
+
+i = 1
+while i <= 100:
+    print("Today is Sunday")
+    i += 1
+oday is Sunday
+Today is Sunday
+Today is Sunday
+Today is Sunday
+Today is Sunday
+>>> 
+
+
+#taking multiple input
+
+x=[]  
+for i in range(int(input("How many elements are in list : "))):
+    x.append(int(input())) 
+print(x) 
+    
+
+
+
+a=input('enter no of student: ')
+x=[]  
+for i in range(int(a)):
+    x.append(int(input())) 
+print(x) 
+    
+
+
+
+a=input('enter no of student: ')
+b=[]
+for c in range(int(a)):
+    b.append(int(input()))
+    for d in range(int(a)):
+        if b[c]==b[int(a)-1:int(a)]:
+            print('paid')
+        else:
+                print('not paid')
+    
+
+enter no of student: 3
+3
+not paid
+not paid
+not paid
+
+
+
+a=input('enter no of student: ')
+b=[]
+f=b[int(a)-1:int(a)]
+for c in range(int(a)):
+    b.append(int(input()))
+g=b[c:c+1]
+if g==f:
+    print('paid')
+else:
+        print('not paid')
+    
+=== RESTART: C:\Users\aditya kumar singh\Downloads\aditya1.py ===
+enter no of student: 3
+3
+3
+3
+not paid
+>>> 
+
+
+
+
+a=input()
+b=input()
+c=input()
+d=len(b)
+q=len(c)
+for i in range(0,d,2):
+    e=b[i]
+for p in range(1,d+1,2):
+    f=b[p]
+    
+    print(z, end="")
+print("\n")
+for g in range(0,q,2):
+    h=c[g]
+    print(h, end="")
+print("\n")
+for j in range(1,q+1,2):
+    k=c[j]
+    print(k, end="")
+print("\n")
+
+
+
+
+a=input('enter no of student: ')
+b=[]
+f=b[int(a)-1:int(a)]
+for c in range(int(a)):
+    b.append(int(input()))
+    for d in range(0,len(b)):
+        g=b[d:d+1]
+        print(g)
+
+
+
+5
+[5]
+5
+[5]
+[5]
+5
+[5]
+[5]
+[5]
+5
+[5]
+[5]
+[5]
+[5]
+
+
+
+#list to str
+L = [11]
+print("Original List: ",L)
+x = int("".join(map(str, L)))
+print("Single Integer: ",x)
+
+
+
+
+
+
+
+
+a=input('enter no of student: ')
+b=[]
+for c in range(int(a)):
+    b.append(int(input('Enter the roll number of each student who paid the fee: ')))
+d = int("".join(map(str, b)))
+i=str(d)
+e=len(b)
+for f in range(0,e):
+    g=i[f]
+j=input('enter student roll no: ')
+if j==g:
+    print('paid')
+else:
+    print('not paid')
+
+
+
+a=input()
+b=[]
+for c in range(int(a)):
+    b.append(int(input()))
+    d ="".join(map(str, b))
+    print(d)
+4
+5
+5
+6
+56
+8
+568
+9
+5689
+
+
+
+#
+
+a=input()
+b=[]
+for c in range(int(a)):
+    b.append(int(input()))
+for e in range(0,len(b)):
+    d=b[e]
+    print(d)
+2
+45
+56
+45
+56
+>>> 
+
+
+
+
+a=input()
+b=[]
+f=[]
+for c in range(int(a)):
+    b.append(int(input()))
+for e in range(0,len(b)):
+    d=b[e]
+    if 50 < int(d):
+        print(d)
+y ===
+3
+45
+78
+90
+78
+
+
+
+
+def common_member(a, b): 
+    a_set = set(a) 
+    b_set = set(b) 
+  
+    if (a_set & b_set): 
+        print(a_set & b_set) 
+    else: 
+        print("No common elements")
+a=input()
+b=input()
+common_member(a, b) 
+
+
+
+
+
+# initializing list 
+a = [3, 6, 7, 8, 9, 2, 1, 5] 
+  
+# printing original list 
+print("The original list : " + str(a)) 
+  
+# Using list slicing 
+# Separating odd and even index elements 
+b = a[::2] + a[1::2] 
+  
+# print result 
+print("Seprated odd and even index list : " + str(b))
+
+
+
+a=input('enter no of student: ')
+b=[]
+e=[]
+for c in range(int(a)):
+    b.append(int(input('Enter the marks of each student: ')))
+d=[b[f] for f in range(0,int(a),2)]
+print(d)
+enter no of student: 4
+Enter the marks of each student: 67
+Enter the marks of each student: 90
+Enter the marks of each student: 23
+Enter the marks of each student: 78
+[67, 23]
+>>> 
+
+
+
+
+a=input('enter no of student: ')
+b=[]
+e=[]
+h=''.join(b)
+for c in range(int(a)):
+    b.append(int(input('Enter the marks of each student: ')))
+for e in range(0,len(b)):
+    d=b[e]
+    if 50 < int(d):
+        print(d)
+
+
+
+
+
+enter no of student: 4
+Enter the marks of each student: 90
+Enter the marks of each student: 67
+Enter the marks of each student: 456
+Enter the marks of each student: 34
+90
+67
+456
+
+
+
+
+a=input('enter no of student: ')
+b=[]
+w=[]
+h=''.join(b)
+for c in range(int(a)):
+    b.append(int(input('Enter the marks of each student: ')))
+for e in range(0,len(b)):
+    d=b[e]
+    if 50 < int(d):
+        w.append(str(d))
+    elif int(d) < 0:
+        print("invalid input")
+z=len(w)
+print("no of passed students="+str(z))
+
+enter no of student: 5
+Enter the marks of each student: -2
+Enter the marks of each student: 56
+Enter the marks of each student: 78
+Enter the marks of each student: 45
+Enter the marks of each student: 90
+invalid input
+no of passed students=3
+>>> 
+
+
+
+
+
+a=2
+b=[]
+e=[]
+h=''.join(b)
+for c in range((a)):
+    b.append(input('Enter the marks of each student: '))
+i={"samsung":140,"sandisk":200,"toshiba":180}
+for m in range(1,len(b),2):
+    q=b[m]
+    for e in range(0,len(b)):
+        d=b[e]
+        print(d)
+
+
+
+
+Enter the marks of each student: samsung
+Enter the marks of each student: samsung
+samsung
+samsung
+>>> 
+
+
+
+
+
+a=2
+b=[]
+e=[]
+h=''.join(b)
+for c in range((a)):
+    b.append(input('Enter the marks of each student: '))
+i={"samsung":140,"sandisk":200,"toshiba":180}
+odd_i = [] 
+even_i = [] 
+for i in range(0, len(b)): 
+    if i % 2: 
+        even_i.append(b[i]) 
+    else : 
+        odd_i.append(b[i]) 
+  
+res = odd_i + even_i 
+print("Seprated odd and even index list: " + str(res)) 
+
+
+#dictionary from input
+a=input()
+b=input()
+c={}
+c[a]=b
+print(c)
+
+
+
+
+a=int(input("enter no of tachnical employee: "))
+b=[]
+for c in range(a):
+    b.append(input('enter id: '))
+d=[b[i] for i in range(0,len(b),2)]
+e=[element*2 for element in d]
+
+print(b)
+print(e)
+    
+
+
+
+= RESTART: C:\Users\aditya kumar singh\Downloads\aditya1.py ===
+enter no of tachnical employee: 3
+enter id: 7
+enter id: 8
+enter id: 9
+['7', '8', '9']
+['77', '99']
+
+
+e = [i * 5 for i in d]
+print(e)
+enter no of tachnical employee: 2
+enter id: 8
+enter id: 9
+['88888']
+
+
+
+
+a=int(input("enter no of technical employee: "))
+b=[]
+for c in range(a):
+    b.append(input('enter id: '))
+d=[b[p] for p in range(0,len(b),2)]
+e=[int(d[i])*11/10 for i in range(len(d))]
+f=[b[l] for l in range(1,len(b),2)]
+g=[int(f[h])*11/10 for h in range(len(d))]
+j=e+g
+print(e)
+print(d)
+print(f)
+print(j)
+print(g)
+
+
+
+a=int(input("enter no of technical employee: "))
+b=[]
+for c in range(a):
+    b.append(input('enter id: '))
+d=[b[p] for p in range(0,len(b),2)]
+e=[int(d[i])*11/10 for i in range(len(d))]
+f=[b[l] for l in range(1,len(b),2)]
+g=[int(f[h])*11/10 for h in range(len(d))]
+j=e+g
+for n in range(0,len(e)):
+    k=input(e[n])
+for o in range(0,len(g)):
+    l=input(g[n])
+
+print(m)
+print(e)
+print(d)
+print(f)
+print(sum(j))
+print(g)
+m={}
+m[k]=l
+print(m)
+
+
+
+def a(b, c):
+    print('aditya' + b)
+a("kumar", "4")
+
+
+
+def a(b):
+    return b**3
+print(a(3))
+
+
+
+a=True
+if a:
+    print("ma")
+else:
+    print("fg")
+
+
+a=True
+b=False
+if a and not(b):
+    print("ma")
+else:
+    print("fg")
+
+
+
+i=1
+a=[]
+while i<=4:
+    print(i)
+    i+=1
+    a.append(i)
+print(a)
+
+
+
+a=[5,8,2,56,47,4,67,56]
+c=[]
+for b in a:
+    if b > 50:
+        c.append(b)
+        print("Congrats 9 cgpa (:"+)
+print(len(c))
+
+
+
+# multiple input
+
+
+
+a=1
+b=int(input())
+d=[]
+while a <= b:
+    c=input()
+    a+=1
+    d.append(c)
+
+a=1
+b=int(input())
+d=[]
+while a <= b:
+    c=input()
+    a+=1
+    d.append(c)
+
+f=[d[e] for e in range(0,len(d),2)]
+a_1=[d[a_2] for a_2 in range(1,len(d),2)]
+print(f)
+print(a_1)
+
+
+a=1
+b=int(input())
+d=[]
+while a <= b:
+    c=input()
+    a+=1
+    d.append(c)
+
+f=[d[e] for e in range(0,len(d),2)]
+a_1=[d[a_2] for a_2 in range(1,len(d),2)]
+for a3 in f:
+    a5=(int(a3)*11//10)
+for a4 in a_1:
+    a6=(int(a4)*11//10)
+print(a5)
+print(a6)
+
+
+
+dictionary={}
+c=int(input("enter no of times: "))
+d=0
+while d <=c:
+    d+=1
+    a=input("enter: ")
+    b=input("no: ")
+    string=a.partition(' ')[d-1]
+    num=b.partition(' ')[d-1]
+dictionary.update({string:(num)})
+        
+print(dictionary)
+
+
+
+
+b=int(input())
+d=[]
+a5={}
+while a <= b:
+    c=input()
+    a+=1
+    d.append(c)
+
+f=[d[e] for e in range(0,len(d),2)]
+a_1=[d[a_2] for a_2 in range(1,len(d),2)]
+for a3 in f:
+    string=a3.partition(' ')[0]
+for a4 in a_1:
+    num=a4.partition(' ')[0]
+a5.update({string:(num)})
+print(a5)
+
+
+4
+g
+h
+e
+r
+{'e': 'r'}
+>>> 
+
+
+
+
+def cube(num):
+    return num**3
+print(cube(4))
+64
+
+
+
+
+def dictionary(a,b):
+    return {str(a):str(b)}
+print(dictionary(5,6))
+    
+==== RESTART: C:\Users\aditya kumar singh\Downloads\aditya.py ===
+{'5': '6'}
+>>> 
+
+
+
+def a1(a,b):
+    return {str(a):str(b)}
+c=[]
+a2=0
+while a2<=2:
+    a2+=1
+    a=input()
+    b=input()
+a2=a1(a,b)
+c.append(a2)
+print(c)
+[{'d': 'f'}]
+
+
+syms x y z
+viewSolidone(z, 0+0*x+0*y, x^2+y^2,x,y/2,sqrt(y),y,0,4)
+int(int(x^2+y^2,x,y/2,sqrt(y)),y,0,4)
+
+
+
+a={}
+n=input("enter no of dictionary: ")
+for i in range(int(n)):
+   c=input()
+   b=input()
+   a.update({c:b})
+print(a)
+
+
+a=[7,5,9,3,6]
+for b in a:
+    print('x'*b)
+
+a1=[98,56,34,23,78,90]
+a4={}
+
+
+for i in range(3):
+    for a2 in a1:
+        for a3 in a1:
+            a4.update({str(a2):str(a3)})
+print(a4)
+{'98': '90', '56': '90', '34': '90', '23': '90', '78': '90', '90': '90'}
+
+a1=[98,56,34]
+a5=[56,78,97]
+a4={}
+
+for a2 in a1:
+    for a3 in a5:
+        a4.update({a2:a3})
+print(a4)
+{98: 97, 56: 97, 34: 97}a=1
+
+
+
+b=int(input())
+d=[]
+a6={}
+while a <= b:
+    c=input()
+    a+=1
+    d.append(c)
+
+f=[d[e] for e in range(0,len(d),2)]
+a_1=[d[a_2] for a_2 in range(1,len(d),2)]
+for a3 in f:
+    for a4 in a_1:
+        a6.update({a3:a4})
+print(a6)
+
+
+{'t': 'k', 'r': 'k', 'w': 'k', 'u': 'k', 'p': 'k'}
+
+
+
+
+a=1
+b=int(input())
+d=[]
+a1=[]
+a6={}
+while a <= b:
+    c=input()
+    a2=input()
+    a+=1
+    d.append(c)
+    a1.append(a2)
+print(d)
+print(a1)
+
+
+
+
+a7={"samsung":100,"sony":"200","toshiba":"300"}
+for a in a7:
+   print(a)
+
+
+
+samsung
+sony
+toshiba
+
+
+a7={"samsung":100,"sony":200,"toshiba":300}
+for a in a7:
+   print(a7.get(a))
+100
+200
+300
+
+
+
+a7={'samsung':100,'sony':200,'toshiba':300}
+
+a=1
+b=int(input())
+d=[]
+a1=[]
+a6={}
+while a <= b:
+    c=input()
+    a2=input()
+    a+=1
+    d.append(c)
+    a1.append(a2)
+for a8 in d:
+    if int(a8)==int(a7["samsung"]):
+        print(a8)
+2
+100
+jk
+100
+li
+100
+100
+
+
+
+
+
+
+a7={100:'samsung',200:'sony',300:'toshiba'}
+a=1
+b=int(input())
+d=[]
+a1=[]
+a6={}
+while a <= b:
+    c=input()
+    a2=input()
+    a+=1
+    d.append(c)
+    a1.append(a2)
+for a8 in a1:
+    for a9 in d:
+        
+        a10=int(a9)*11//10
+        print(a10)
+
+
+
+
+2
+10
+samsung
+20
+samsung
+11
+22
+11
+22
+
+
+
+
+
+a7={100:'samsung',200:'sony',300:'toshiba'}
+a=1
+b=int(input())
+d=[]
+a1=[]
+a6={}
+while a <= b:
+    c=input()
+    a2=input()
+    a+=1
+    d.append(c)
+    a1.append(a2)
+for a8 in a1:
+    for a9 in d:
+        
+        a10=int(a9)*11//10
+        a6.update({a10:a8})
+        print(a6)
+
+
+
+
+{110: 'samsung'}
+{110: 'samsung', 220: 'samsung'}
+{110: 'samsung', 220: 'samsung'}
+{110: 'samsung', 220: 'samsung'}
+
+
+
+
+
+a7={100:'samsung',200:'sony',300:'toshiba'}
+a=1
+b=int(input())
+d=[]
+a1=[]
+a6={}
+while a <= b:
+    c=input()
+    a2=input()
+    a+=1
+    d.append(c)
+    a1.append(a2)
+for a8 in a1:
+    for a9 in d:
+        if str(a8)==str(a7[100]):
+            a10=int(a9)*11//10
+            a6.update({a10:a8})
+            print(a6)
+
+
+
+2
+100
+tsfg
+200
+samsung
+{110: 'samsung'}
+{110: 'samsung', 220: 'samsung'}
+
+
+
+
+#SOrting using bubble 
+
+
+
+
+
+def sort(nums):
+    for i in range(len(nums)-1,0,-1):
+        for j in range(i):
+            if nums[j] > nums[j+1]:
+                temp=nums[j]
+                nums[j]=nums[j+1]
+                nums[j+1]=temp
+
+
+
+
+
+nums=[7,67,3,56,34,23]
+sort(nums)
+print(nums)
+
+
+
+
+def sort(nums):
+    for i in range(5):
+        minpos=i
+        for j in range(i,6):
+            if nums[j]<nums[minpos]:
+                minpos=j
+        temp=nums[i]
+        nums[i]=nums[minpos]
+        nums[minpos]=temp
+        print(nums)
+nums=[89,67,45,34,56,23]
+sort(nums)
+print(nums)
+
+
+
+[23, 67, 45, 34, 56, 89]
+[23, 34, 45, 67, 56, 89]
+[23, 34, 45, 67, 56, 89]
+[23, 34, 45, 56, 67, 89]
+[23, 34, 45, 56, 67, 89]
+[23, 34, 45, 56, 67, 89]
+>>> 
+
+
+
+
+i=1
+
+a4=[]
+a5={}
+while i<=9:
+    a1=input()
+    b2=input()
+    i+=1
+    a5.update({a1:b2})
+for a6 in a5:
+    a8=a5.get(a6)
+    a4.append(a8)
+print(a5)
+print('congrats'+max(a4))
+
+
+
+
+a7={100:'samsung',200:'sony',300:'toshiba'}
+a=1
+b=int(input())
+d=[]
+a1=[]
+a6={}
+while a <= b:
+    c=input()
+    a2=input()
+    a+=1
+    d.append(c)
+    a1.append(a2)
+for a8 in a1:
+    for a9 in d:
+        if str(a8)==str(a7[100]):
+            string=a8.partition(' ')[0]
+            a10=int(a9)*100
+            num=str(a10).partition(' ')[0]
+            a6.update({string:num})
+
+
+
+
+
+
+#bubble sort
+def search(list,n):
+    i=0
+    while i<len(list):
+        if list[i]==n:
+            return True
+        i+=1
+        
+    return False
+list=[89,56,34,67]
+n=56
+if search(list, n):
+    print("found")
+
+#bubble sort in python
+
+def sort(nums):
+    for i in range(len(nums)-1,0,-1):
+        for j in range(i):
+            if nums[j]>nums[j+1]:
+                temp=nums[j]
+                nums[j]=nums[j+1]
+                nums[j+1]=temp
+
+
+nums=[8,56,34,235,67]
+sort(nums)
+print(nums)
+
+
+
+
+a=input()
+i=0
+a9=[]
+while i<=int(a):
+    a2=input()
+    i+=1
+    a3=list(a2)
+    a4=[a3[i] for i in range(0,len(a3),2)]
+    a5=[a3[f] for f in range(1,len(a3),2)]
+    a6=''.join(a4)
+    a7=''.join(a5)
+    a8=(str(a6)+' '+str(a7))
+    a9.append(a8)
+for a10 in a9:
+    print(a10)
+
+
+
+
+
+= RESTART: C:\Users\aditya kumar singh\Downloads\aditya1.py ===
+2
+hacker
+rank
+hce akr
+rn ak
+>>> 
+
+# removing spaces
+def remove(string): 
+    return string.replace(" ", "")
+
+
+
+
+1
+fh  hh     kll
+fhhhkll
+
+
+
+
+if str(a13)==str(a15):
+        print("found")
+    else:
+        print("not found")
+
+
+
+
+a1=input()
+i=0
+a10={}
+a16=[]
+def remove(string): 
+    return string.replace(" ", "")
+while i<int(a1):
+    a2=input()
+    i+=1
+    a3=remove(a2)
+    a4=list(a3)
+    a6=len(a4)
+    a5=[a4[i] for i in range(a6-8,a6)]
+    a7=''.join(a5)
+    a8=[a4[j] for j in range(0,a6-8)]
+    a9=''.join(a8)
+    a11=a10.update({a7:a9})
+a12=0
+while a12<int(a1):
+    a14=input()
+    a12+=1
+for a13 in a10:
+    a15=a10.get(a13)
+    a16.append(a15)
+for a17 in a16:
+    if a17==a14:
+        print(str(a17)+'='+str(a13))
+   
+for a17 in a16:
+    a18=1
+    if a17==a14:
+        while a18<len(a16):
+            print("found")
+            a18+=1
+            break
+    elif a17!=a14:
+        while a18<len(a16):
+            a18+=1
+            print(" not found")
+            break
+
+
+
+     
+List=['k','j','p','r']
+result = True
+# Get the first element
+first_element=input()
+# Compares all the elements with the first element
+for word in List:
+   if first_element != word:
+      result = False
+      print("All elements are not equal")
+      break
+   else:
+      result = True
+   if result:
+      print("All elements are equal")
+
+a1=input()
+i=0
+a10={}
+a16=[]
+a30=[]
+def remove(string): 
+    return string.replace(" ", "")
+while i<int(a1):
+    a2=input()
+    i+=1
+    a3=remove(a2)
+    a4=list(a3)
+    a6=len(a4)
+    a5=[a4[i] for i in range(a6-8,a6)]
+    a7=''.join(a5)
+    a8=[a4[j] for j in range(0,a6-8)]
+    a9=''.join(a8)
+    a11=a10.update({a7:a9})
+
+
+
+
+for a13 in a10:
+    a15=a10.get(a13)
+    a16.append(a15)
+    a30.append(a13)
+    
+
+
+a25=0
+while a25<8:
+    a21=input()
+    
+    def founding(a22,a21):
+        for a23 in a22:
+            if a23==a21:
+                a31=a22.index(a23)
+                a33=a30[a31]
+                print(str(a21)+'='+str(a33))
+                break
+            else:
+                print('not found')
+                break
+    founding(a16,a21)
+
+
+
+
+a30.append(a13)
+    
+
+
+a25=0
+while a25<8:
+    a21=input()
+    
+    def founding(a22,a21):
+        for a23 in a22:
+            if a23==a21:
+                a31=a22.index(a23)
+                a33=a30[a31]
+                print((str(a21)+'='+str(a33))
+                break
+            else:
+                if a23!=a21:
+                    print('not found')
+                    break
+    founding(a16,a21)
+
+
+
+
+
+
+a1=input()
+i=0
+a10={}
+a16=[]
+a30=[]
+def remove(string): 
+    return string.replace(" ", "")
+while i<int(a1):
+    a2=input()
+    i+=1
+    a3=remove(a2)
+    a4=list(a3)
+    a6=len(a4)
+    a5=[a4[i] for i in range(a6-8,a6)]
+    a7=''.join(a5)
+    a8=[a4[j] for j in range(0,a6-8)]
+    a9=''.join(a8)
+    a11=a10.update({a7:a9})
+
+
+
+
+for a13 in a10:
+    a15=a10.get(a13)
+    a16.append(a15)
+    a30.append(a13)
+    
+
+a25=0
+
+
+try:
+    while a25<7:
+        a21=input()
+        def search(a35, n):
+            i=0
+        
+            while i<len(a35):
+                if a35[i]==n:
+                    return True
+                i+=1
+                
+                
+            return False
+    
+
+        if search(a16,a21):
+            a36=a16.index(a21)
+            a37=a30[a36]
+            print(str(a21)+'='+str(a37))
+        else:
+            print('Not found')
+except EOFError as e:
+    print(e)
+
+
+
+
+
+alpha = 'a'
+for i in range(0, 26): 
+    test_list.append(alpha) 
+    alpha = chr(ord(alpha) + 1)
+
+
+
+
+
+a1=input()
+a2=list(a1)
+
+for i in range(len(a2)):
+    if a2[i-1].lower()==a2[i].lower():
+        print('bad')
+        break
+    else:
+        print('good')
+        break
+
+
+thinking about business and investing this website will provide you everything related to business and investing which you want because .
+
+
+
+
+a1=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+a2=input()
+a3=list(a2)
+a6=int(input())
+a8=[]
+for a4 in a3:
+    a5=a1.index(a4)
+    a7=(a6+a5)
+    if a7>=26:
+        a9=a7-26
+        a8.append(a1[a9])
+    elif a7<26:
+        a8.append(a1[a7])
+    
+a9=''.join(a8)
+print(a9)
+
+
+
+
+
+b5=''.join(b4)
+
+
+
+
+
+
+a1=input()
+
+def ab(b1):
+    b2=list(b1)
+    b4=[]
+    
+    for b3 in b2:
+        if b3==0:
+            break
+        elif b3!=0:
+            try:
+                if int(b1)%int(b3)==0:
+                    b4.append(b3)
+            except ZeroDivisionError:
+                pass
+
+    b5=b4[::-1]
+    b6=''.join(b5)
+    print(b6)
+
+ab(a1)   
+
+
+
+
+a1=input()
+
+def ab(b1):
+    b2=list(b1)
+    b4=[]
+    
+    for b3 in b2:
+        if b3==0:
+            break
+        elif b3!=0:
+            try:
+                if int(b1)%int(b3)==0:
+                    b4.append(b3)
+            except ZeroDivisionError:
+                pass
+
+    b5=b4[::-1]
+    b6=''.join(b5)
+    print(b6)
+
+ab(a1)   
+
+100
+a1=input()
+i=0
+a10={}
+a16=[]
+a30=[]
+def remove(string): 
+    return string.replace(" ", "")
+while i<int(a1):
+    a2=input()
+    i+=1
+    a3=remove(a2)
+    a4=list(a3)
+    a6=len(a4)
+    a5=[a4[i] for i in range(a6-8,a6)]
+    a7=''.join(a5)
+    a8=[a4[j] for j in range(0,a6-8)]
+    a9=''.join(a8)
+    a11=a10.update({a7:a9})
+for a13 in a10:
+    a15=a10.get(a13)
+    a16.append(a15)
+    a30.append(a13)
+    
+
+a25=0
+while a25<7:
+    try:
+        a21=input()
+        def search(a35, n):
+            i=0
+        
+            while i<len(a35):
+                if a35[i]==n:
+                    return True
+                i+=1
+                
+                
+            return False
+        if search(a16,a21):
+            a36=a16.index(a21)
+            a37=a30[a36]
+            print(str(a21)+'='+str(a37))
+        else:
+            print('Not found')
+    
+   
+
+
+    
+    except EOFError:
+        print('EOFError')
+        
+
+
+101
+a1=int(input())
+a3={}
+def remove(string): 
+    return string.replace(" ", "")
+for a2 in range(a1):
+    b4=input()
+    a4=remove(b4)
+    a5=len(a4)
+    a6=[a4[i] for i in range(a5-8,a5)]
+    a7=''.join(a6)
+    a9=[a4[p] for p in range(0,a5-8)]
+    a10=''.join(a9)
+    a3.update({a10:str(a7)})
+
+a12=100001
+for a20 in range(a12):
+    try:
+        a15=str(input())
+    
+        for a14 in a3:
+        
+            if str(a15)==str(a14):
+                a16=a3.get(a15)
+
+                print(str(a15)+'='+str(a16))
+                break
+        for a17 in a3:
+            if str(a15)!=str(a14):
+                print("Not found")
+                break
+            
+                
+            
+    except EOFError as e:
+        pass
+    
+
+
+    
+
+
